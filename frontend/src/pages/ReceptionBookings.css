@@ -1,0 +1,85 @@
+.reception-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 36px 24px 80px;
+}
+
+.reception-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.reception-header h1 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+.reception-header p {
+  font-size: 13px;
+  color: #8A8477;
+  margin: 0;
+}
+
+.reception-header select {
+  padding: 8px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 13px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.reception-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 13.5px;
+}
+
+.reception-table th {
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8A8477;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-dim);
+}
+
+.reception-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.reception-table tr:last-child td {
+  border-bottom: none;
+}
+
+.reception-table__actions button {
+  border: 1px solid var(--sage);
+  background: #fff;
+  color: var(--sage-dark);
+  border-radius: var(--radius);
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reception-table__actions button:hover:not(:disabled) {
+  background: var(--sage);
+  color: #fff;
+}
+
+.reception-table__actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

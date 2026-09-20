@@ -1,0 +1,156 @@
+.owner-dash {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 36px 24px 80px;
+}
+
+.owner-dash__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.owner-dash h1 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.owner-dash__title-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.owner-dash__manage-btn {
+  width: auto;
+  padding: 9px 18px;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.owner-dash__manage-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--sage-dark);
+  text-decoration: none;
+}
+
+.owner-dash__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-card__label {
+  font-size: 12px;
+  color: #8A8477;
+  font-weight: 600;
+}
+
+.stat-card__value {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--sage-dark);
+}
+
+.stat-card__sub {
+  font-size: 11.5px;
+  color: #A8A296;
+}
+
+.owner-dash__charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 800px) {
+  .owner-dash__charts,
+  .owner-dash__lists {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.chart-card h2 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 14px;
+}
+
+.chart-card__empty {
+  font-size: 13px;
+  color: #8A8477;
+  padding: 40px 0;
+  text-align: center;
+  margin: 0;
+}
+
+.owner-dash__lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.list-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.list-card h2 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.list-card__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13.5px;
+}
+
+.list-card__row:last-of-type {
+  border-bottom: none;
+}
+
+.list-card__count {
+  font-weight: 600;
+  color: var(--sage-dark);
+}
+
+.list-card__note {
+  font-size: 12px;
+  color: #8A8477;
+  margin: 10px 0 0;
+}

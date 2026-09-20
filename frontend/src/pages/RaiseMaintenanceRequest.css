@@ -1,0 +1,46 @@
+.raise-request-page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.raise-request-page h1 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.raise-request-subtitle {
+  color: #5C6A57;
+  font-size: 14px;
+  margin: 0 0 26px;
+}
+
+.raise-request-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-field textarea {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: #fff;
+  font-size: 14.5px;
+  font-family: var(--font-body);
+  color: var(--ink);
+  resize: vertical;
+}
+
+.form-field textarea:focus {
+  border-color: var(--sage);
+}
+
+.form-field input[type='file'] {
+  padding: 8px 0;
+  border: none;
+  font-size: 13.5px;
+}

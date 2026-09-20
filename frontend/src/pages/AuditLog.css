@@ -1,0 +1,84 @@
+.audit-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 36px 24px 80px;
+}
+
+.audit-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  gap: 16px;
+}
+
+.audit-header h1 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+.audit-header p {
+  font-size: 13px;
+  color: #8A8477;
+  margin: 0;
+}
+
+.audit-header input {
+  padding: 8px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 13px;
+  background: #fff;
+  color: var(--ink);
+  width: 260px;
+}
+
+.audit-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.audit-table th {
+  text-align: left;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8A8477;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-dim);
+}
+
+.audit-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.audit-table tr:last-child td {
+  border-bottom: none;
+}
+
+.audit-action {
+  font-family: 'Courier New', monospace;
+  font-size: 11.5px;
+  background: var(--paper-dim);
+  color: var(--sage-dark);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.audit-details {
+  color: #77816F;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

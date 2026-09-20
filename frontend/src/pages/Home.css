@@ -1,0 +1,28 @@
+.home-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.home-page__eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brass);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.home-page__title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0 0 14px;
+}
+
+.home-page__body {
+  color: #5C6A57;
+  font-size: 15.5px;
+  line-height: 1.6;
+}

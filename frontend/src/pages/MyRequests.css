@@ -1,0 +1,130 @@
+.myrequests-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 36px 24px 80px;
+}
+
+.myrequests-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.myrequests-header h1 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.myrequests-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.myrequests-header__actions select {
+  padding: 8px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 13px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.myrequests-new-btn {
+  width: auto;
+  padding: 8px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.request-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.request-row__image {
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--paper-dim);
+}
+
+.request-row__image--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sage);
+  font-family: var(--font-display);
+  font-size: 20px;
+}
+
+.request-row__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.request-row__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.request-row__top h3 {
+  font-family: var(--font-display);
+  font-size: 15.5px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.request-row__desc {
+  font-size: 13px;
+  color: #5C6A57;
+  margin: 0 0 4px;
+}
+
+.request-row__meta {
+  font-size: 12px;
+  color: #8A8477;
+  margin: 0;
+}
+
+.request-row__cancel-btn {
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 7px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--brick);
+  flex-shrink: 0;
+}
+
+.request-row__cancel-btn:hover:not(:disabled) {
+  background: #FBEAE8;
+}
+
+.request-row__cancel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

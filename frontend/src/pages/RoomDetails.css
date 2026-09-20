@@ -1,0 +1,254 @@
+.details-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+.details-back {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--sage-dark);
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.details-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 760px) {
+  .details-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.details-gallery {
+  aspect-ratio: 4 / 3;
+  background: var(--paper-dim);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.details-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.details-gallery__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #A8A296;
+  font-size: 13px;
+}
+
+.details-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.details-thumb {
+  width: 60px;
+  height: 45px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.details-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.details-thumb--active {
+  border-color: var(--sage);
+}
+
+.details-status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--paper-dim);
+  margin-bottom: 12px;
+}
+
+.details-status--available {
+  color: var(--sage-dark);
+}
+
+.details-status--booked {
+  color: var(--brick);
+}
+
+.details-status--out_of_service {
+  color: #8A8477;
+}
+
+.details-rating {
+  font-size: 13.5px;
+  color: var(--brass);
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.details-rating span {
+  color: #8A8477;
+  font-weight: 400;
+}
+
+.details-reviews {
+  margin-top: 8px;
+}
+
+.details-reviews h2 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.details-reviews__empty {
+  font-size: 13px;
+  color: #8A8477;
+}
+
+.review-card {
+  border-top: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+.review-card:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.review-card__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.review-card__stars {
+  color: var(--brass);
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.review-card__author {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.review-card__comment {
+  font-size: 13px;
+  color: #5C6A57;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.details-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.details-meta {
+  color: #77816F;
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.details-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--sage-dark);
+  margin: 0 0 18px;
+}
+
+.details-price span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8A8477;
+}
+
+.details-description {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0 0 24px;
+}
+
+.details-amenities h2 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+.details-amenities__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.details-amenity {
+  font-size: 12.5px;
+  background: var(--paper-dim);
+  color: var(--sage-dark);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.booking-widget {
+  margin-top: 8px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.booking-widget__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.booking-widget__hint {
+  font-size: 13px;
+  color: #8A8477;
+  margin: 4px 0 14px;
+}
+
+.booking-widget__total {
+  font-size: 14px;
+  color: var(--sage-dark);
+  margin: 4px 0 16px;
+}
+
+.details-book-btn {
+  max-width: 100%;
+}
+
+.details-book-note {
+  font-size: 12px;
+  color: #8A8477;
+  margin-top: 8px;
+}

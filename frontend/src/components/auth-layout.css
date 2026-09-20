@@ -1,0 +1,136 @@
+.auth-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 860px) {
+  .auth-shell {
+    grid-template-columns: 0.85fr 1.15fr;
+  }
+}
+
+.auth-lobby {
+  background: var(--sage-dark);
+  color: var(--paper);
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-lobby::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 12%, rgba(169, 125, 80, 0.18), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(169, 125, 80, 0.12), transparent 40%);
+  pointer-events: none;
+}
+
+.auth-lobby__mark {
+  font-family: var(--font-display);
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  border: 1px solid rgba(250, 247, 241, 0.35);
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.auth-lobby__name {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(32px, 5vw, 46px);
+  margin: 28px 0 4px;
+  line-height: 1.05;
+}
+
+.auth-lobby__tagline {
+  font-size: 15px;
+  color: rgba(250, 247, 241, 0.72);
+  margin: 0;
+}
+
+.key-tag {
+  align-self: flex-start;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(250, 247, 241, 0.06);
+  border: 1px solid rgba(250, 247, 241, 0.18);
+  border-radius: 999px;
+  padding: 10px 20px 10px 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.key-tag__ring {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3px solid var(--brass);
+  flex-shrink: 0;
+}
+
+.key-tag__number {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--brass);
+  min-width: 34px;
+}
+
+.key-tag__label {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(250, 247, 241, 0.6);
+}
+
+.auth-desk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.auth-desk__inner {
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.auth-title {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.auth-subtitle {
+  color: #5C6A57;
+  font-size: 14.5px;
+  margin: 0 0 28px;
+  line-height: 1.5;
+}
+
+.page-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5C6A57;
+  font-family: var(--font-body);
+}

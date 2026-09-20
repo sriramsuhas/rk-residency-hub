@@ -1,0 +1,247 @@
+.listing-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 36px 24px 80px;
+}
+
+.listing-header {
+  margin-bottom: 28px;
+}
+
+.listing-title {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.listing-subtitle {
+  color: #5C6A57;
+  font-size: 14px;
+  margin: 0;
+}
+
+.listing-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .listing-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.listing-filters {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.filter-group {
+  margin-bottom: 18px;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--sage-dark);
+  margin-bottom: 6px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 13.5px;
+  font-family: var(--font-body);
+  background: #fff;
+  color: var(--ink);
+}
+
+.filter-group--row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.amenity-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.amenity-chip {
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.amenity-chip--active {
+  background: var(--sage);
+  border-color: var(--sage);
+  color: #fff;
+}
+
+.listing-status {
+  color: #8A8477;
+  font-size: 14px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.listing-error {
+  background: #FBEAE8;
+  color: var(--brick);
+  border: 1px solid #F1CFCA;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  font-size: 13.5px;
+  margin-bottom: 18px;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.room-card:hover {
+  box-shadow: var(--shadow-card);
+  transform: translateY(-1px);
+}
+
+.room-card__image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--paper-dim);
+}
+
+.room-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.room-card__image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #A8A296;
+  font-size: 12.5px;
+}
+
+.room-card__status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.room-card__status--available {
+  color: var(--sage-dark);
+}
+
+.room-card__status--booked {
+  color: var(--brick);
+}
+
+.room-card__status--out_of_service {
+  color: #8A8477;
+}
+
+.room-card__body {
+  padding: 14px 16px 16px;
+}
+
+.room-card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.room-card__row h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.room-card__price {
+  font-weight: 700;
+  color: var(--sage-dark);
+  font-size: 14.5px;
+}
+
+.room-card__price small {
+  font-weight: 400;
+  color: #8A8477;
+  font-size: 11px;
+}
+
+.room-card__meta {
+  font-size: 12.5px;
+  color: #77816F;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+  font-size: 13.5px;
+  color: #5C6A57;
+}
+
+.pagination button {
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 7px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

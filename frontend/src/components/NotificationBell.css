@@ -1,0 +1,117 @@
+.notif-bell {
+  position: relative;
+}
+
+.notif-bell__trigger {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  padding: 4px;
+  line-height: 1;
+}
+
+.notif-bell__badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: var(--brick);
+  color: #fff;
+  font-size: 9.5px;
+  font-weight: 700;
+  min-width: 15px;
+  height: 15px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+}
+
+.notif-bell__panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 320px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow-card);
+  z-index: 50;
+}
+
+.notif-bell__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.notif-bell__mark-all {
+  background: none;
+  border: none;
+  color: var(--sage-dark);
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notif-bell__empty {
+  padding: 20px 14px;
+  font-size: 13px;
+  color: #8A8477;
+  text-align: center;
+  margin: 0;
+}
+
+.notif-bell__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.notif-bell__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.notif-bell__item:last-child {
+  border-bottom: none;
+}
+
+.notif-bell__item--unread {
+  background: var(--paper-dim);
+}
+
+.notif-bell__item-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.notif-bell__item-message {
+  font-size: 12.5px;
+  color: #5C6A57;
+  line-height: 1.4;
+}
+
+.notif-bell__item-time {
+  font-size: 11px;
+  color: #A8A296;
+  margin-top: 2px;
+}

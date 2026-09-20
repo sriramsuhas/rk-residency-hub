@@ -1,0 +1,46 @@
+.booking-status {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--paper-dim);
+}
+
+.booking-status--pending_payment {
+  color: var(--brass);
+}
+
+.booking-status--confirmed {
+  color: var(--sage-dark);
+}
+
+.booking-status--checked_in {
+  color: var(--brass);
+}
+
+.booking-status--checked_out {
+  color: #77816F;
+}
+
+.booking-status--cancelled {
+  color: var(--brick);
+}
+
+/* Maintenance request statuses */
+.booking-status--pending {
+  color: var(--brass);
+}
+
+.booking-status--assigned {
+  color: #6B7FB8;
+}
+
+.booking-status--in_progress {
+  color: var(--brass);
+}
+
+.booking-status--completed {
+  color: var(--sage-dark);
+}
