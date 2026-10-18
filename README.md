@@ -32,7 +32,7 @@ analytics and reports, all backed by a role-based REST API.
 
 ## 1. Problem statement
 
-A small hotel typically runs on phone calls, paper registers and spreadsheets.
+A residential hotel typically runs on phone calls, paper registers and spreadsheets.
 That causes recurring problems:
 
 - **Double bookings**, because availability is tracked by hand.
